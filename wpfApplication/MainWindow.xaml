@@ -8,7 +8,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Приложение для распознавания номеров на образцах керна" Height="600" Width="1000" WindowStartupLocation="CenterScreen" FontFamily="Times New Roman" FontSize="22" Visibility="Visible" WindowStyle="ThreeDBorderWindow" BorderThickness="0" Icon="4480617-200.png">
     <Grid Background="#006D4C">
-
+ 
         <Border MinWidth="400" Margin="20" Background="#00A876">
             <DataGrid x:Name="DataGrid_data" Margin="694,0,-0.4,-14.6" HorizontalAlignment="Stretch" IsSynchronizedWithCurrentItem="False"/>
         </Border>
