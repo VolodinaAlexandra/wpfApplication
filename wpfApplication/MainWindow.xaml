@@ -1,0 +1,21 @@
+﻿<Window x:Class="wpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfApplication"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Приложение для распознавания номеров на образцах керна" Height="600" Width="1000" WindowStartupLocation="CenterScreen" FontFamily="Times New Roman" FontSize="22" Visibility="Visible" WindowStyle="ThreeDBorderWindow" BorderThickness="0" Icon="4480617-200.png">
+    <Grid Background="#006D4C">
+
+        <Border MinWidth="400" Margin="20" Background="#00A876">
+            <DataGrid x:Name="DataGrid_data" Margin="694,0,-0.4,-14.6" HorizontalAlignment="Stretch" IsSynchronizedWithCurrentItem="False"/>
+        </Border>
+        <Button x:Name="Button_choosePhoto" Content="Выбрать фото" HorizontalAlignment="Left" Margin="20,0,0,20.4" VerticalAlignment="Bottom" Width="209" Height="59" Background="#FF2EC799" FontSize="17" FontFamily="DM Sans 18pt 18pt Black" BorderBrush="#FF2EC799" Foreground="#DDFFFFFF"/>
+        <Button x:Name="Button_detect" Content="Распознать номер" HorizontalAlignment="Left" Margin="229,0,0,20.4" VerticalAlignment="Bottom" Width="210" Height="59" Background="#FF2EC799" BorderBrush="#FF2EC799" FontSize="17" FontFamily="DM Sans 18pt 18pt Black"/>
+        <Button x:Name="Button_addToExcelFile" Content="Выгрузить таблицу в Excel" HorizontalAlignment="Left" Margin="439,0,0,20.4" VerticalAlignment="Bottom" Width="272" Height="59" Background="#FF2EC799" BorderBrush="#FF2EC799" FontSize="17" FontFamily="DM Sans 18pt 18pt Black"/>
+        <Image x:Name="Image_photoKerna" HorizontalAlignment="Left" Height="466" Margin="20,20,0,0" VerticalAlignment="Top" Width="691" OpacityMask="White"/>
+
+    </Grid>
+</Window>
